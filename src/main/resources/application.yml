@@ -1,0 +1,16 @@
+spring:
+  thymeleaf:
+    cache: false
+  devtools:
+    restart:
+      enanled: true
+      additional-paths: src/main/java
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: root
+
+mybatis:
+  type-aliases-package: com.lea.min.entity
+  mapper-locations: classpath:mapper/*.xml
