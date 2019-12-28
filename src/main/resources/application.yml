@@ -14,3 +14,5 @@ spring:
 mybatis:
   type-aliases-package: com.lea.min.entity
   mapper-locations: classpath:mapper/*.xml
+server:
+  port: 8888
